@@ -114,6 +114,11 @@ function playRound(playerSelection, computerSelection) {
             }
         // break;
         break;
+        // default option
+        default:
+            // output Invalid choice. Try again!
+            console.log("Invalid choice. Try again!")
+            
     }
 }
 
