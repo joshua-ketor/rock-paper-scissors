@@ -10,7 +10,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   const userChoice = prompt(
-    "Input your choice from the following:\n1.Rock\n2.Paper\n3.Scissors"
+    "Input your choice from the following:\n1.Rock\n2.Paper\n3.Scissor"
   );
   return userChoice;
 }
