@@ -102,8 +102,3 @@ scissor.addEventListener("click", (e) => {
   playRound(id, getComputerChoice());
   getWinner(humanScore, computerScore);
 });
-
-console.log(`Scores:
-    Human: ${humanScore}
-    Computer: ${computerScore}
-    `);
