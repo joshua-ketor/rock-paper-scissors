@@ -2,6 +2,7 @@ console.log("Hello World");
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissor = document.querySelector('#scissor');
+const result = document.querySelector('div');
 
 function getComputerChoice() {
   const options = ["rock", "paper", "scissors"];
@@ -24,43 +25,43 @@ function playGame() {
     if (humanChoice == "rock") {
       switch (computerChoice) {
         case "rock":
-          console.log("It's a tie. You both selected Rock.");
+          result.textContent = "It's a tie. You both selected Rock.";
           break;
         case "paper":
-          console.log("You lose. Paper beats Rock.");
+          result.textContent = "You lose. Paper beats Rock.";
           computerScore++;
           break;
         case "scissors":
-          console.log("You win! Rock beats scissors");
+          result.textContent = "You win! Rock beats scissors";
           humanScore++;
           break;
       }
     } else if (humanChoice == "paper") {
       switch (computerChoice) {
         case "rock":
-          console.log("You win! Paper beats Rock.");
+          result.textContent = "You win! Paper beats Rock.";
           humanScore++;
           break;
         case "paper":
-          console.log("It's a tie. You both selected Paper.");
+          result.textContent = "It's a tie. You both selected Paper.";
           break;
         case "scissors":
-          console.log("You Lose! Scissor beats Paper");
+          result.textContent = "You Lose! Scissor beats Paper";
           computerScore++;
           break;
       }
     } else if (humanChoice == "scissor") {
       switch (computerChoice) {
         case "rock":
-          console.log("You Lose! Rock beats Scissor.");
+          result.textContent = "You Lose! Rock beats Scissor.";
           computerScore++;
           break;
         case "paper":
-          console.log("You Win!. Scissor beats Paper.");
+          result.textContent = "You Win!. Scissor beats Paper.";
           humanScore++;
           break;
         case "scissors":
-          console.log("It's a tie. You both selected Scissor");
+          result.textContent = "It's a tie. You both selected Scissor";
           break;
       }
     }
