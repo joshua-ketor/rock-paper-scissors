@@ -16,7 +16,6 @@ function getHumanChoice() {
   return userChoice;
 }
 
-function playGame() {}
 let humanScore = 0;
 let computerScore = 0;
 
@@ -86,5 +85,3 @@ console.log(`Scores:
     Human: ${humanScore}
     Computer: ${computerScore}
     `);
-
-playGame();
