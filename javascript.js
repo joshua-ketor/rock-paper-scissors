@@ -80,16 +80,19 @@ function getWinner(hScore, cScore) {
 rock.addEventListener("click", (e) => {
   const id = e.target.id;
   playRound(id, getComputerChoice());
+  getWinner(humanScore, computerScore);
 });
 
 paper.addEventListener("click", (e) => {
   const id = e.target.id;
   playRound(id, getComputerChoice());
+  getWinner(humanScore, computerScore);
 });
 
 scissor.addEventListener("click", (e) => {
   const id = e.target.id;
   playRound(id, getComputerChoice());
+  getWinner(humanScore, computerScore);
 });
 
 console.log(`Scores:
