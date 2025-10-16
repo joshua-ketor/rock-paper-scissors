@@ -3,6 +3,7 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissor = document.querySelector("#scissor");
 const result = document.querySelector("div");
+const scoreboard = document.querySelector("#scoreboard");
 
 function getComputerChoice() {
   const options = ["rock", "paper", "scissors"];
@@ -75,6 +76,13 @@ function getWinner(hScore, cScore) {
     result.textContent = "You've lost the game";
     hScore = 0;
   }
+}
+
+function updateScoreBoard() {
+  scoreboard.textContent = `Scores:
+    Human: ${humanScore}
+    Computer: ${computerScore}
+    `;
 }
 
 rock.addEventListener("click", (e) => {
