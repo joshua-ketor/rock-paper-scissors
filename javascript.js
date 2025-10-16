@@ -66,6 +66,17 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+function getWinner(hScore, cScore) {
+  if (hScore >= 5) {
+    result.textContent = "You've won the game";
+    cScore = 0;
+  }
+  if (cScore >= 5) {
+    result.textContent = "You've lost the game";
+    hScore = 0;
+  }
+}
+
 rock.addEventListener("click", (e) => {
   const id = e.target.id;
   playRound(id, getComputerChoice());
