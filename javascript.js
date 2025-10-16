@@ -1,4 +1,7 @@
 console.log("Hello World");
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissor = document.querySelector('#scissor');
 
 function getComputerChoice() {
   const options = ["rock", "paper", "scissors"];
@@ -62,6 +65,22 @@ function playGame() {
       }
     }
   }
+
+  rock.addEventListener('click', (e) => {
+    const id = e.target.id;
+    playRound(id, getComputerChoice());
+  });
+
+  paper.addEventListener('click', (e) => {
+    const id = e.target.id;
+    playRound(id, getComputerChoice());
+  });
+
+  scissor.addEventListener('click', (e) => {
+    const id = e.target.id;
+    playRound(id, getComputerChoice());
+  });
+
 
   
 
